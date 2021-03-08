@@ -1,0 +1,69 @@
+.notepad_main_container{
+    width:100%;
+    height:100%;
+    background-color:red;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    .create_new_note_container{
+        position:absolute;
+        width:300px;
+        height:300px;
+        background-color:red;
+        // transform: translate(-300px);
+        transition:.5s;
+        display:flex;
+        flex-direction: column;
+        .content_create_new_note{
+            width:90%;
+            margin:auto;
+            height:100%;
+            background-color:blue;
+            display:flex;
+            flex-direction: column;
+        }
+        .button_container_create_new_note{
+            height: 40px;
+            width:100%;
+            background-color:green;
+        }
+        .container_name_and_exitBTN{
+            width:100%;
+            height:40px;
+            background-color:green;
+            display:flex;
+            .create_note_title{
+                font-size:22px;
+                color:white;
+                margin:auto auto auto 10px;
+            }
+            .create_note_exitBTn{
+                background:none;
+                cursor: pointer;
+                margin:auto 10px auto auto;
+                border:none;
+                font-size:30px;
+                color:white;
+            }
+        }
+    }
+    .nav_notePad_menu{
+        width:100%;
+        height:60px;
+        background-color:blue;
+        display:flex;
+        .button_create_new_note{
+            cursor:pointer;
+        }
+    }
+    .notePad_container{
+        width:100%;
+        height:100%;
+        overflow-y: auto;
+        background-color:yellow;
+    }
+    .show_container{
+        transform: none;
+    }
+}

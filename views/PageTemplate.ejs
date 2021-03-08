@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Super servis</title>
+</head>
+
+<body>
+
+    <%- include('nav.ejs') %>
+    <div class="content_container" id="content">
+    </div>
+    <%- include('footer.ejs') %>
+    <script src="/js/notepad.js"></script>
+    <script src="/js/checkifAuth.js"></script>
+    <script src="/js/checkifHomeAfterLogin.js"></script>
+
+    <script>
+        const urlPath = '<%=templateToSend%>';
+        check(urlPath)
+        checkWhichRoute(urlPath)
+    </script>
+</body>
+
+</html>
